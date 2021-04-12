@@ -18,7 +18,6 @@ if uploaded_file is not None:
     
     
     
-    df.columns
     df_star_below_4 = df.loc[(df['Star'] <= 3)]#taking those rows whose rating is 3 and less
     text = df_star_below_4[['ID','Text','Star']] #taking only id and review column
     #text_dict = dict(zip(df_star_below_4.ID,df_star_below_4.Text))
